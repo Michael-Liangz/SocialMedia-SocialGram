@@ -21,7 +21,7 @@
   --card-padding: 1rem;
 }
 
-/* TODO =============== BASE =============== -- >  */
+/* TODO =============== BASE =============== */
 *,
 *::before,
 *::after {
@@ -85,7 +85,7 @@ img {
   color: #fff;
 }
 
-/* TODO =============== NAV =============== -- >  */
+/* TODO =============== NAV =============== */
 nav {
   width: 100%;
   background: var(--color-white);
@@ -124,3 +124,5 @@ nav .create {
   align-items: center;
   gap: 2rem;
 }
+
+/* TODO =============== MAIN =============== */
