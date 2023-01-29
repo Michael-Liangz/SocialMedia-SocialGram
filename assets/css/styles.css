@@ -387,7 +387,9 @@ main .container .left .profile {
 }
 
 .middle .feed .user .info h3 .unicons,
-.middle .feed .user .info small .unicons {
+.middle .feed .user .info small .unicons,
+.right .messages .message .message-body h5 .unicons,
+.right .friend-requests .request .info div h5 .unicons {
   color: blue;
   font-size: 0.85rem;
 }
@@ -431,3 +433,5 @@ main .container .left .profile {
 .middle .liked-by p {
   margin-left: 0.5rem;
 }
+
+/* TODO =============== RIGHT =============== */
