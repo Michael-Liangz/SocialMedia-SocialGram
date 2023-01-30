@@ -163,7 +163,7 @@ main .container .left .profile {
   width: 100%;
 }
 
-/* TODO =============== LEFT-SIDEBAR =============== */
+/* TODO =============== SIDEBAR =============== */
 .left .sidebar {
   margin-top: 1rem;
   background: var(--color-white);
