@@ -118,6 +118,13 @@ fontSizes.forEach((size) => {
   });
 });
 
+// * Set default font size
+if (!localStorage.getItem("fontSize")) {
+  localStorage.setItem("fontSize", "font-size-2");
+}
+const savedSize = localStorage.getItem("fontSize");
+document.querySelector(`.${savedSize}`).click();
+
 // TODO =============== PRIMARY COLORS ===============
 const colorPallate = document.querySelectorAll(".choose-color span");
 var root = document.querySelector(":root");
@@ -149,4 +156,62 @@ colorPallate.forEach((color) => {
     color.classList.add("active");
     root.style.setProperty("--primary-color-hue", primaryHue);
   });
+});
+
+// TODO =============== BACKGROUND COLORS ===============
+const bg1 = document.querySelector(".bg-1");
+const bg2 = document.querySelector(".bg-2");
+const bg3 = document.querySelector(".bg-3");
+var root = document.querySelector(":root");
+
+// * Theme background values
+let lightColorLightness;
+let darkColorLightness;
+let whiteColorLightness;
+
+// * Change background color
+const changeBG = () => {
+  root.style.setProperty("--light-color-lightness", lightColorLightness);
+  root.style.setProperty("--dark-color-lightness", darkColorLightness);
+  root.style.setProperty("--white-color-lightness", whiteColorLightness);
+};
+
+bg1.addEventListener("click", () => {
+  // * Add active class
+  bg1.classList.add("active");
+
+  // * Remove active class from the other elements
+  bg2.classList.remove("active");
+  bg3.classList.remove("active");
+
+  // * remove customized change from local storage
+  window.location.reload();
+});
+
+bg2.addEventListener("click", () => {
+  darkColorLightness = "95%";
+  whiteColorLightness = "20%";
+  lightColorLightness = "15%";
+
+  // * Add active class
+  bg2.classList.add("active");
+
+  // * Remove active class from the other elements
+  bg1.classList.remove("active");
+  bg3.classList.remove("active");
+  changeBG();
+});
+
+bg3.addEventListener("click", () => {
+  darkColorLightness = "95%";
+  whiteColorLightness = "10%";
+  lightColorLightness = "0%";
+
+  // * Add active class
+  bg3.classList.add("active");
+
+  // * Remove active class from the other elements
+  bg1.classList.remove("active");
+  bg2.classList.remove("active");
+  changeBG();
 });
