@@ -215,3 +215,15 @@ bg3.addEventListener("click", () => {
   bg2.classList.remove("active");
   changeBG();
 });
+
+// TODO =============== CREATE-POST ===============
+const btnCreatePost = document.querySelector(".btn-create-post");
+const formCreatePost = document.querySelector(".form-create-post");
+
+btnCreatePost.addEventListener("click", () => {
+  formCreatePost.style.boxShadow = "0 0 1rem var(--color-primary)";
+
+  setTimeout(() => {
+    formCreatePost.style.boxShadow = "none";
+  }, 2000);
+});

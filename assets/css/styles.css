@@ -362,6 +362,7 @@ main .container .left .profile {
   background: var(--color-white);
   padding: 0.4rem var(--card-padding);
   border-radius: var(--border-radius);
+  /* box-shadow: 0 0 1rem var(--color-primary); */
 }
 
 .middle .create-post input[type="text"] {
