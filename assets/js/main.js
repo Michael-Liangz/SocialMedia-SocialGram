@@ -227,3 +227,21 @@ btnCreatePost.addEventListener("click", () => {
     formCreatePost.style.boxShadow = "none";
   }, 2000);
 });
+
+// TODO =============== FRIEND REQUEST ===============
+const addBtn = document.querySelectorAll("#add");
+const delBtn = document.querySelectorAll("#del");
+
+// * Accept Friend Request
+addBtn.forEach((request) => {
+  request.addEventListener("click", () => {
+    request.parentElement.style.display = "none";
+  });
+});
+
+// * Decline Friend Request
+delBtn.forEach((request) => {
+  request.addEventListener("click", () => {
+    request.parentElement.parentElement.style.display = "none";
+  });
+});
