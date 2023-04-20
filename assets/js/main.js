@@ -120,7 +120,7 @@ fontSizes.forEach((size) => {
 
 // * Set default font size
 if (!localStorage.getItem("fontSize")) {
-  localStorage.setItem("fontSize", "font-size-2");
+  localStorage.setItem("fontSize", "font-size-1");
 }
 const savedSize = localStorage.getItem("fontSize");
 document.querySelector(`.${savedSize}`).click();
