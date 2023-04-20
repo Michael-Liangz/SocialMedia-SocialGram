@@ -778,11 +778,6 @@ main .container .right {
 
 /* * =============== Small Tablet and Mobile Phone =============== */
 @media screen and (max-width: 992px) {
-  /* main {
-    max-width: 100%;
-    margin: auto;
-  } */
-
   nav .search-bar {
     display: none;
   }
@@ -818,6 +813,11 @@ main .container .right {
     /* margin-top: -34rem; */
   }
 
+  main .container .left {
+    width: 5rem;
+    margin-top: 25%;
+  }
+
   main .container .right {
     display: none;
   }
@@ -825,6 +825,14 @@ main .container .right {
   .customize-theme .card {
     width: 92vw;
     /* margin: auto; */
+  }
+
+  .middle .feeds .feed {
+    margin-right: 12%;
+  }
+
+  .middle .create-post {
+    width: 88%;
   }
 
   .customize-theme .choose-bg > div {
