@@ -777,7 +777,7 @@ main .container .right {
 }
 
 /* * =============== Small Tablet and Mobile Phone =============== */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   nav .search-bar {
     display: none;
   }
@@ -806,6 +806,10 @@ main .container .right {
     top: 1.3rem;
     left: calc(20rem - 0.6rem);
     display: block;
+  }
+
+  .left .sidebar i .notification-count.envelope {
+    display: none;
   }
 
   main .container .middle {
