@@ -778,8 +778,10 @@ main .container .right {
 
 /* * =============== Small Tablet and Mobile Phone =============== */
 @media screen and (max-width: 991px) {
-  .container {
-    gap: 0;
+  main {
+    max-width: 100%;
+    margin: auto;
+    /* padding: auto; */
   }
 
   nav .search-bar {
@@ -808,7 +810,7 @@ main .container .right {
   .left .notifications-popup::before {
     display: absolute;
     top: 1.3rem;
-    right: calc(20rem - 0.6rem);
+    left: calc(20rem - 0.6rem);
     display: block;
   }
 
@@ -823,6 +825,7 @@ main .container .right {
 
   .customize-theme .card {
     width: 92vw;
+    margin: auto;
   }
 
   .customize-theme .choose-bg > div {
